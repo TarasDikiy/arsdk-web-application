@@ -1,0 +1,19 @@
+<h1>Zones list</h1>
+{{#if zones.length}}
+<ul>
+    {{#each zones}}
+        <li class="zones">
+            <label>
+                <span>{{title}}</span>
+                <span>X:{{latitude}}</span>
+                <span>Y:{{longitude}}</span>
+                <span>R:{{radius}}</span>
+            </label>
+        </li>
+
+    {{/each}}
+</ul>
+{{else}}
+    <p>No zones!</p>
+    <a href="/create">Add new zone</a>
+{{/if}}
