@@ -23,7 +23,7 @@ app.use(arsdkRoutes)
 
 async function start() {
     try {
-        await mongoose.connect('mongodb+srv://taras:varlist@cluster0.vqbi5.mongodb.net/arsdk', {useNewUrlParser: true})
+        await mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://taras:varlist@cluster0.vqbi5.mongodb.net/arsdk', {useNewUrlParser: true})
         app.listen(PORT, () => {
             console.log('Server has been started...')
         })
