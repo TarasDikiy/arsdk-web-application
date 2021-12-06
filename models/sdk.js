@@ -16,6 +16,10 @@ const schema = new Schema({
     radius: {
         type: Number,
         required: true
+    },
+    index: {
+        type: String,
+        required:true
     }
 })
 

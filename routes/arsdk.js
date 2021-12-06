@@ -31,7 +31,8 @@ router.post('/create', async (req, res) => {
         title: req.body.title,
         latitude: req.body.latitude,
         longitude: req.body.longitude,
-        radius: req.body.radius
+        radius: req.body.radius,
+        index: "z"
     })
     zone.save()
     res.redirect('/')
