@@ -40,6 +40,7 @@ router.post('/create', async (req, res) => {
 
 router.get('/downloadApk', (req, res) => {
     //тут скачивать АПК
+
 })
 
 module.exports = router
